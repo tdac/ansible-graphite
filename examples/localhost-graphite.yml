@@ -1,0 +1,13 @@
+# This example will setup Graphite on localhost, with the web interface listening on localhost:8080 
+ - hosts: localhost
+
+   vars:
+     uwsgi_graphite_extraopts:
+       - option: 'http'
+         value: "localhost:8080"
+   roles:
+     - role: nsg.graphite
+       graphite_secret_key: 'VerySecret'
+       graphite_time_zone: 'Europe/London' 
+       graphite_admin_user: 'admin'
+       graphite_admin_password: 'admin'
