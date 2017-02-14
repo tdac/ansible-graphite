@@ -13,6 +13,7 @@ env:
     - TEST_OSVER="debian:7"
     - TEST_OSVER="debian:8"
     - TEST_OSVER="ubuntu:1404"
+    - TEST_OSVER="ubuntu:1604"
     - TEST_OSVER="centos:6"
     - TEST_OSVER="centos:7"
 
